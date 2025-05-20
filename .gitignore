@@ -3,3 +3,5 @@ node_modules/
 mvp/best_fine_tuned_clip_model/model.safetensors
 node_modules/
 .cache/
+mvp/best_fine_tuned_clip_model/
+node_modules/
