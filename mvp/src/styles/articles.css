@@ -1,0 +1,130 @@
+.documentation-container {
+  max-width: 80%; /* Адаптивная ширина для больших экранов */
+  
+  margin-left: 180px; /* Центрирование */
+  font-family: Arial, sans-serif;
+  background-color: #f7eae4;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgb(172, 59, 97, 0.7);
+}
+
+.documentation-container h1 {
+  font-family: 'Playfair Display', serif; /* Применяем шрифт Playfair Display */
+  font-size: 2.5rem; /* Увеличиваем размер шрифта */
+  color: #ac3b61; 
+  text-align: center; 
+  margin-bottom: 20px;
+  padding-top: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Легкая тень для придания объема */
+}
+
+.documentation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Адаптивный макет */
+  gap: 30px; /* Промежуток между блоками */
+}
+
+.article-card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.article-card:hover {
+  transform: scale(1.05); /* Увеличение карточки при наведении */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.article-card a {
+  color: #84c1a6;
+  font-weight: bold;
+  text-decoration: none;
+  word-wrap: break-word; /* Перенос длинных ссылок */
+}
+
+.article-card a:hover {
+  text-decoration: underline;
+  color: #ac3b61;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .documentation-container {
+    padding: 10px;
+  }
+
+  .documentation-grid {
+    grid-template-columns: 1fr; /* Один столбец на узких экранах */
+  }
+
+  .article-card {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .documentation-container h1 {
+    font-size: 1.8rem;
+  }
+}
+
+.article-card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  color: #eee2dc;
+}
+
+.article-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #84c1a6;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.article-title:hover {
+  color: #ac3b61;
+  text-decoration: underline;
+}
+
+.article-description {
+  font-size: 1rem;
+  color: #eee2dc;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+.article-description {
+  font-size: 1rem;
+  color: #eee2dc;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+.article-description::before {
+  content: "Описание: ";
+  font-weight: bold;
+  color: #84c1a6;
+}
+
+.documentation-container .pets-description {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.7rem;
+  padding: 0 20px;
+  color: #ac3b61;
+  text-align: center;
+  margin:  30px 0px 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  opacity: 0.9;
+}

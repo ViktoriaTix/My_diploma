@@ -1,0 +1,152 @@
+.app-container_detect {
+  width: 95%; /* Увеличиваем ширину контейнера */
+  max-width: 1200px; /* Ограничиваем максимальную ширину */
+  margin-left: 210px; /* Центрирование */
+  padding: 50px; /* Добавляем отступы внутри */
+  background-color: #f7eae4;
+  color: #333;    
+  border-radius: 10px; /* Скругляем углы */
+  box-shadow: 0 4px 10px rgba(172, 59, 97, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрируем содержимое */
+}
+
+.app-container_detect  h1 {
+  font-family: 'Playfair Display', serif; /* Применяем шрифт Playfair Display */
+  font-size: 2.5rem; /* Увеличиваем размер шрифта */
+  color: #ac3b61; 
+  text-align: center; 
+  margin-bottom: 20px; /* Отступ снизу */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Легкая тень для придания объема */
+}
+
+.main-content_detect{
+  padding-left: 40px;
+}
+
+.upload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.image-button-container {
+  text-align: center; /* Вертикальное выравнивание */
+  gap: 10px; /* Расстояние между изображением и текстом */
+  margin-right: 80px;
+}
+
+.image-button {
+  display: inline-block; /* Блочное поведение */
+  transition: transform 0.2s ease-in-out; /* Плавный переход */
+}
+
+.image-button img {
+  width: 59px; /* Размер изображения */
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out; /* Плавный переход для масштаба и поворота */
+  transform-origin: center center; /* Центрируем масштабирование */
+}
+
+.image-button img:active {
+  transform: scale(0.9); /* Уменьшаем размер при клике */
+}
+
+.button-text {
+  font-size: 20px;
+  color: #ac3b61;
+  font-weight: 800; /* Полужирный текст */
+}
+
+.submit-button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.image-button img:hover {
+  transform: rotate(45deg) scale(1.5); /* Поворот и увеличение при наведении */
+}
+
+.error-message {
+  text-align: center;
+  color: #ac3b61;
+}
+
+.result-container {
+  display: flex;
+  justify-content: center; /* Центрирование по горизонтали */
+  gap: 20px; /* Расстояние между изображением и текстом */
+  margin-top: 20px;
+  background-color: #333;
+  color: #cf4674;
+  border-radius: 10px;
+  padding: 20px; /* Увеличиваем внутренние отступы, чтобы увеличить высоту */
+  overflow: hidden; /* Прячем все, что выходит за пределы контейнера */
+  max-width: 70%; /* Ограничиваем максимальную ширину контейнера */
+  height: 350px; /* Устанавливаем фиксированную высоту для контейнера */
+  margin-left: 140px;
+}
+
+.image-preview {
+  flex-shrink: 0; /* Не сжимаем изображение */
+  width: 350px; /* Устанавливаем фиксированную ширину для всех изображений */
+  height: 250px; /* Устанавливаем фиксированную высоту для всех изображений */
+  position: relative; /* Не влияет на макет при масштабировании */
+}
+
+.image-preview img {
+  width: 100%; /* Изображение заполняет контейнер по ширине */
+  height: 100%; /* Изображение заполняет контейнер по высоте */
+  object-fit: cover; /* Сохраняем пропорции, но изображение заполняет контейнер */
+}
+
+.prediction {
+  flex-grow: 1; /* Текст занимает оставшееся пространство */
+}
+
+h2, h3 {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+.custom-header {
+  text-align: center;
+  font-size: 34px;
+  color: #ac3b61;
+}
+
+#file-input {
+  display: none;
+}
+
+.image-button-container.confirm-button-container .button-text {
+  margin-bottom: 20px; /* Сдвигает текст вверх */
+  font-size: 18px;
+}
+
+.app-container_detect .pets-description {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.7rem;
+  padding: 0 20px;
+  color: #ac3b61;
+  text-align: center;
+  margin:  30px 0px 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  opacity: 0.9;
+}

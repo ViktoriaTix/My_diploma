@@ -1,0 +1,440 @@
+.documentation-container_table {
+  width: 95%;
+  max-width: 1200px;
+  margin-left: 210px;
+  padding: 20px;
+  background-color: #f7eae4;
+  color: #333;    
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(172, 59, 97, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.documentation-container_table h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #ac3b61;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.buttons-container_active {
+  display: flex;
+  gap: 150px;
+  padding-top: 20px;
+  margin-bottom: 30px;
+  justify-content: center;
+  width: 100%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.track-button, .results-button, .stop-monitoring-button {
+  padding: 12px 28px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  min-width: 120px; /* Минимальная ширина кнопок */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase; /* Все буквы заглавные */
+  font-weight: 500; /* Полужирный текст */
+  letter-spacing: 0.5px; /* Разрядка букв */
+}
+
+.track-button {
+  color: white;
+}
+
+.track-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  opacity: 0.9;
+}
+
+.results-button {
+  color: white;
+}
+
+.results-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  opacity: 0.9;
+}
+
+.stop-monitoring-button {
+  color: white;
+}
+
+.stop-monitoring-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  opacity: 0.9;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: #fff;
+  min-width: 180px;
+  box-shadow: 0 4px 10px rgba(172, 59, 97, 0.7);
+  z-index: 1;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+.dropdown-content div {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  transition: background-color 0.2s;
+}
+
+.dropdown-content div:hover {
+  background-color: #eee2dc;
+  color: #ac3b61;
+}
+
+.table-container {
+  width: 75%;
+  margin: 20px auto;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(172, 59, 97, 0.7);
+  display: flex;
+  align-items: flex-start;
+  margin-left: 12%;
+}
+
+.pet-photo {
+  margin-right: 20px;
+}
+
+.pet-photo-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.event-data {
+  flex: 1;
+}
+
+.event-data h2 {
+  font-size: 1.8rem;
+  color: #ac3b61;
+  margin-bottom: 15px;
+}
+
+.event-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.event-table th,
+.event-table td {
+  border: 1px solid #ac3b61;
+  padding: 5px 8px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.3;
+  font-size: 0.9rem;
+}
+
+.event-table th {
+  background-color: #f4f4f4;
+  color: #ac3b61;
+  font-weight: 500;
+}
+
+.event-table td {
+  color: #333;
+}
+
+.no-data {
+  color: #666;
+  font-style: italic;
+  font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .documentation-container_table {
+      width: 100%;
+      margin-left: 0;
+      padding: 15px;
+  }
+  
+  .buttons-container {
+      flex-direction: column;
+      gap: 10px;
+  }
+  
+  .table-container {
+      width: 90%;
+      margin-left: 0;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .pet-photo {
+      margin-right: 0;
+      margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .documentation-container_table h1 {
+      font-size: 2rem;
+  }
+  
+  .event-data h2 {
+      font-size: 1.6rem;
+  }
+  
+  .track-button, .results-button, .stop-monitoring-button {
+      padding: 10px 15px;
+      font-size: 0.9rem;
+  }
+}
+
+.tracking-info {
+  padding: 10px 0; /* Оставляем только вертикальные отступы */
+  margin: 20px 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem; /* Размер шрифта */
+  color: #ac3b61; /* Цвет текста */
+  font-weight: 600;
+  background-color: transparent; /* Прозрачный фон */
+  border: none; /* Убираем границу */
+  box-shadow: none; /* Убираем тень */
+}
+
+/* Если нужно добавить легкий акцент без фона */
+.tracking-info p {
+  display: inline-block;
+  padding: 0px 15px;
+  text-shadow: 0 2px 3px rgba(172, 59, 97, 0.2); /* Тень текста */
+}
+
+
+/* Стили для модального окна выбора камеры */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(172, 59, 97, 0.5); /* Полупрозрачный розовый фон */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(3px); /* Эффект размытия фона */
+}
+
+.modal-content {
+  background-color: #eee2dc;
+  padding: 25px;
+  border-radius: 10px;
+  width: 500px;
+  max-width: 90%;
+  box-shadow: 0 4px 20px rgba(172, 59, 97, 0.7);
+  border: 1px solid #ac3b61;
+}
+
+.modal-content h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #ac3b61;
+  text-align: center;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(172, 59, 97, 0.3);
+}
+
+.cameras-list {
+  max-height: 300px;
+  overflow-y: auto;
+  margin: 15px 0;
+  padding-right: 10px;
+}
+
+.camera-item {
+  padding: 12px 15px;
+  margin: 8px 0;
+  background-color: #fff;
+  border: 1px solid #ac3b61;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(172, 59, 97, 0.2);
+}
+
+.camera-item:hover {
+  background-color: #f8e9e0;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(172, 59, 97, 0.2);
+}
+
+.camera-item.selected {
+  background-color: #f0d7d0;
+  border-color: #ac3b61;
+  color: #ac3b61;
+  font-weight: 500;
+  box-shadow: 0 0 0 2px #ac3b61;
+}
+
+.no-cameras-message {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #666;
+  font-style: italic;
+  padding: 20px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.modal-buttons button {
+  padding: 12px 25px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.modal-buttons button:first-child {
+  background-color: #fff;
+  color: #ac3b61;
+  border: 1px solid #ac3b61;
+}
+
+.modal-buttons button:first-child:hover {
+  background-color: #f8e9e0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(172, 59, 97, 0.3);
+}
+
+.modal-buttons button:last-child {
+  background-color: #ac3b61;
+  color: white;
+}
+
+.modal-buttons button:last-child:hover {
+  background-color: #9a3555;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(172, 59, 97, 0.4);
+}
+
+/* Полоса прокрутки */
+.cameras-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.cameras-list::-webkit-scrollbar-track {
+  background: #eee2dc;
+  border-radius: 4px;
+}
+
+.cameras-list::-webkit-scrollbar-thumb {
+  background-color: #ac3b61;
+  border-radius: 4px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 90%;
+    padding: 20px;
+  }
+  
+  .modal-content h3 {
+    font-size: 1.5rem;
+  }
+  
+  .modal-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .modal-buttons button {
+    width: 100%;
+  }
+}
+
+.modal-buttons button:last-child:disabled {
+  background-color: #d3a5b3;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.documentation-container_table .pets-description {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.7rem;
+  padding: 0 20px;
+  color: #ac3b61;
+  text-align: center;
+  margin:  20px 0px 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  opacity: 0.9;
+}
+
+/* Стили для таблицы питомцев */
+.pets-table-container_active {
+  margin-top: 30px;
+  width: 72%;
+  border-radius: 10px;
+}
+
+.week-results-container {
+  margin-bottom: 30px;
+}
+
+.day-results {
+  margin-bottom: 25px;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+
+.day-header {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 1.1em;
+}

@@ -1,0 +1,113 @@
+.author-page {
+    position: relative;
+    min-height: 100vh;
+    padding: 0;
+    padding-left: 120px;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+  }
+  
+  /* Фоновые элементы */
+  .backgroundBlock {
+    position: fixed;
+    width: 830px;
+    height: 500px;
+    bottom: -90px;
+    right: -100px;
+    background-color: #ac3b61;
+    z-index: 1;
+    border-top-left-radius: 90%;
+  }
+  
+  .overlappingImages {
+    position: fixed;
+    width: 555px;
+    height: 455px;
+    bottom: -90px;
+    right: 80px;
+    overflow: hidden;
+    z-index: 2;
+  }
+  
+  /* Текстовые стили - теперь на всю доступную ширину */
+  .textContainer_author {
+    margin-top: 80px;
+    position: relative;
+    z-index: 3;
+    width: 90%; /* 100% ширины экрана */
+    padding: 0 20px; /* Небольшие отступы только по бокам */
+    box-sizing: border-box;
+  }
+  
+  .largeText_author h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #ac3b61;
+    margin-bottom: 30px;
+    text-align: center; /* Центрируем заголовок */
+  }
+  
+  .smallText_author {
+    font-size: 20px;
+    line-height: 1.4;
+    width: 100%;
+    max-width: 1400px; /* Максимальная ширина, но можно убрать */
+    margin: 0 auto; /* Центрирование */
+  }
+  
+  .smallText_author h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .smallText_author p {
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+  
+  .project-goals {
+    margin: 30px 0;
+  }
+  
+  .project-goals h4 {
+    font-size: 24px;
+    color: #ac3b61;
+    margin: 20px 0 15px 0;
+  }
+  
+  .project-goals ul {
+    padding-left: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .project-goals li {
+    margin-bottom: 10px;
+    list-style-type: disc;
+  }
+  
+  .acknowledgments {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: rgba(172, 59, 97, 0.1);
+    border-radius: 10px;
+  }
+  
+  .acknowledgments h4 {
+    font-size: 24px;
+    color: #ac3b61;
+    margin-bottom: 10px;
+  }
+  
+  .author-content {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin: 0 auto 40px; /* Центрирование */
+    width: 95%; /* Ширина почти на весь контейнер */
+    max-width: none; /* Убрали ограничение максимальной ширины */
+    box-sizing: border-box;
+  }

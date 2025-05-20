@@ -1,0 +1,50 @@
+/* Sidebar.css */
+.sidebar {
+  width: 80px; /* Уменьшаем ширину панели */
+  height: calc(100vh - 52px); /* Высота экрана минус высота Header */
+  background-color: #333;
+  color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin-top: 52px; /* Отодвигаем ниже Header */
+  box-sizing: border-box;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 10px 20px; /* Уменьшаем отступы внутри кнопок */
+  text-align: center;
+  border-bottom: 1px solid #444;
+  cursor: pointer;
+  transition: 400ms;
+  box-sizing: border-box;
+  margin: 10px auto; /* Центрируем кнопки */
+  width: 80%; /* Убираем установку ширины во всю панель */
+  border-radius: 25px; /* Овальная форма */
+}
+
+.sidebar ul li:hover {
+  background-color: #eee2dc;
+  color: #ac3b61;
+  transform: scale(1.1);
+  font-weight: bold;
+  border-bottom: 0;
+}
+
+.sidebar ul li.active {
+  background-color: #eee2dc;
+  color: #ac3b61;
+  transform: scale(1.1);
+  font-weight: bold;
+  border-bottom: 0;
+}
+
+.sidebar ul li + li {
+  margin-top: 20px; /* Добавляем расстояние между кнопками */
+}
