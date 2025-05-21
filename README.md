@@ -16,7 +16,7 @@ TailsTrack анализирует поведение ваших питомцев
 
 ### 1. Установка модели классификатора  
 Для работы системы необходимо скачать веса модели:  
-1. Перейдите по [ссылке](https://drive.google.com/drive/my-drive) и загрузите папку `best_fine_tuned_clip_model`.  
+1. Перейдите по [ссылке](https://drive.google.com/drive/folders/12wAYcKeKD-q5bAX5XKZcrWQMJbozhVdC?usp=drive_link) и загрузите папку `best_fine_tuned_clip_model`.  
 2. Поместите её в директорию `./mvp/`, чтобы получился путь:  
    ```
    ./mvp/best_fine_tuned_clip_model/...
